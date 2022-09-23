@@ -83,12 +83,12 @@ let IntObserver = new IntersectionObserver(
                 // console.log(entry.target);
                 
                 for (i = 0; i < childcount;i++ ) {
-                    children[i].style.cssText = "transform: translateY(0); opacity:1; filter: blur(0px);" ;
+                    children[i].style.cssText = "transform: translateY(0); opacity:1;" ;
 
                 }
             } else if (!entry.isIntersecting ) {
                 for (i = 0; i < childcount;i++ ) {
-                    children[i].style.cssText = "transform: translateY(120%); opacity:0; filter: blur(10px);";
+                    children[i].style.cssText = "transform: translateY(120%); opacity:0;";
                  }
             }
         })
